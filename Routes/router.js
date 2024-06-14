@@ -6,8 +6,6 @@ const conn = require("../db/conn");
 // register user data
 router.post("/create", (req, res) => {
 
-    // console.log(req.body);
-
     const { name, email, age, mobile, work, add, desc } = req.body;
 
     if (!name || !email || !age || !mobile || !work || !add || !desc) {
